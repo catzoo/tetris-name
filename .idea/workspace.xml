@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fab33ffe-c83f-4561-9e04-d90eeab9fcab" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="20lWCtDt0gG94OrRVa7WsGsyFRl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Catzoo Bob\Desktop\Github\tetris-name\img" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="?" />
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fab33ffe-c83f-4561-9e04-d90eeab9fcab" name="Default Changelist" comment="" />
+      <created>1636619530799</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636619530799</updated>
+      <workItem from="1636619590505" duration="2952000" />
+      <workItem from="1636669569884" duration="1650000" />
+      <workItem from="1636736557436" duration="5782000" />
+      <workItem from="1636760654566" duration="1149000" />
+      <workItem from="1636845882600" duration="8319000" />
+      <workItem from="1636879081914" duration="2750000" />
+      <workItem from="1636941137815" duration="1339000" />
+      <workItem from="1636944494202" duration="2013000" />
+      <workItem from="1637045793685" duration="596000" />
+      <workItem from="1637116967581" duration="1193000" />
+      <workItem from="1637198804105" duration="7612000" />
+      <workItem from="1637209851902" duration="4533000" />
+      <workItem from="1637224493267" duration="1322000" />
+      <workItem from="1637279050491" duration="1394000" />
+      <workItem from="1637341510892" duration="5183000" />
+      <workItem from="1637372800867" duration="504000" />
+      <workItem from="1637423628980" duration="1945000" />
+      <workItem from="1637632891832" duration="3206000" />
+      <workItem from="1637688701251" duration="12600000" />
+      <workItem from="1637716218812" duration="1780000" />
+      <workItem from="1637718513484" duration="96000" />
+      <workItem from="1637879953364" duration="3407000" />
+      <workItem from="1638137709993" duration="3928000" />
+      <workItem from="1638153382805" duration="598000" />
+      <workItem from="1638302404734" duration="591000" />
+      <workItem from="1638381763760" duration="596000" />
+      <workItem from="1638734833764" duration="4284000" />
+      <workItem from="1638823048039" duration="1794000" />
+      <workItem from="1638901552178" duration="1056000" />
+      <workItem from="1638903691814" duration="4734000" />
+      <workItem from="1638990217222" duration="4885000" />
+      <workItem from="1639160092633" duration="122000" />
+      <workItem from="1639162152211" duration="2361000" />
+      <workItem from="1639520546459" duration="1050000" />
+      <workItem from="1639849572157" duration="8021000" />
+      <workItem from="1639958458580" duration="4361000" />
+      <workItem from="1640205152384" duration="5854000" />
+      <workItem from="1640463904635" duration="1650000" />
+      <workItem from="1640817380074" duration="609000" />
+      <workItem from="1640942618733" duration="1200000" />
+      <workItem from="1640991081569" duration="719000" />
+      <workItem from="1641059348617" duration="12057000" />
+      <workItem from="1641090973828" duration="2911000" />
+      <workItem from="1641357118388" duration="2032000" />
+      <workItem from="1641471786643" duration="709000" />
+      <workItem from="1641722755564" duration="1750000" />
+      <workItem from="1641807121675" duration="2384000" />
+      <workItem from="1641922502525" duration="392000" />
+      <workItem from="1641924366641" duration="1209000" />
+      <workItem from="1641956756032" duration="662000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1639854542760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/203.-860.1440.860/-900.-114.900.1400@0.0.1920.1040" timestamp="1636746992707" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/311.-860.1440.860/-900.-114.900.1400@0.0.1920.1040" timestamp="1639854542760" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1638738127404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/311.-860.1440.860/-900.-114.900.1400@0.0.1920.1040" timestamp="1638738127404" />
+  </component>
+</project>
