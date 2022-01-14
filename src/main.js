@@ -31,7 +31,11 @@ let grid = [
 let active = [
     // PIXI.Sprite
 ]
-let active_pivot = []
+
+// Keep track of active's pivot.
+// Could be undefined which means to use active[0] as the pivot
+let active_pivot = undefined
+
 
 function grid_create(height, width) {
     let row = []
@@ -119,12 +123,21 @@ function active_create() {
     //      Basically, how Tetris does it, it has a "next block" window. Idea - set that window as a container and grab it when its ready to play
     // Creates the active by randomly selecting from blocks
     const block = blocks[Math.round(Math.random() * (blocks.length - 1))]
-    const pos = block[0]
-    const color = block[1]
+
+    // Grabbing info from the block
+    const pos = block["coords"]
+    const color = block["color"]
+    // Grabbing the pivot
+    if (block["pivot"] == null) {
+        active_pivot = undefined
+    } else {
+        active_pivot = block["pivot"].slice()
+    }
 
     let sizeX = [0, 0]
     let sizeY = [0, 0]
 
+    // Creating the block
     for (let i=0; i<pos.length; i++) {
         let sprite = new PIXI.Sprite(texture)
         sprite.tint = Math.floor(Math.random() * 16777216)
@@ -143,36 +156,15 @@ function active_create() {
         else if (y < sizeY[0])
             sizeY[0] = y
 
-        sprite_move(sprite, x, y - 1)
+        sprite_move(sprite, x, y)
         active.push(sprite)
         container.addChild(sprite)
     }
 
-    // if (sizeX[0] === 0 && sizeX[1] === 0)
-    //     sizeX = [0, 1]
-    //
-    // if (sizeY[0] === 0 && sizeY[1] === 0)
-    //     sizeY = [0, 1]
-
-    console.log(sizeX, sizeY)
-
-    sizeX = (sizeX[1] - sizeX[0]) / 2
-    sizeY = (sizeY[1] - sizeY[0]) / 2
-
-    console.log(sizeX, sizeY)
-
-    active_pivot = [sizeX, sizeY - 1]
-
-    if (!active_move_by(0, 1)) {
+    if (!active_move_by(4, 0)) {
         // TODO: Stop the game here
         console.log("Game end")
     }
-
-    // let pivot = [0, 0]
-    // console.log(sizeX, sizeY)
-    // pivot[0] = (sizeX[1] + 1 - sizeX[0]) / 2 + 5
-    // pivot[1] = (sizeY[1] + 1 - sizeY[0]) / 2 - 1
-    // active_pivot = pivot
 
 }
 
@@ -204,9 +196,11 @@ function active_move_by(x, y) {
             let sprite = active[i]
             sprite_move(sprite, sprite.gridX + x, sprite.gridY + y)
         }
-        active_pivot[0] += x
-        active_pivot[1] += y
-        console.log(active_pivot)
+        if (active_pivot != null) {
+            active_pivot[0] += x
+            active_pivot[1] += y
+        }
+
         return true
     }
     return false
@@ -271,10 +265,16 @@ function active_rotate() {
     let coords = []
 
     // Grabbing the pivot
-    // let pivotX = active[0].gridX
-    // let pivotY = active[0].gridY
-    let pivotX = active_pivot[0]
-    let pivotY = active_pivot[1]
+    let pivotX, pivotY
+
+    if (active_pivot != null) {
+        pivotX = active_pivot[0]
+        pivotY = active_pivot[1]
+
+    } else {
+        pivotX = active[0].gridX
+        pivotY = active[0].gridY
+    }
 
     // Go through each block getting the new coordinates
     for (let i=0; i<active.length; i++) {
@@ -387,6 +387,7 @@ document.addEventListener("keydown", event => {
 
 function setup() {
     // TODO: add mask after testing
+    // TODO: Add configuration for height / width
     const height = 20
     const width = 10
     const graphics = new PIXI.Graphics()
@@ -405,5 +406,7 @@ function setup() {
     grid_create(height, width)
     active_create()
 
-    // app.ticker.add(ticker)
+    app.ticker.add(ticker)
 }
+
+setup()
